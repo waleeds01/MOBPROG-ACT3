@@ -15,13 +15,13 @@ const HomeScreen = () => {
 
   return (
     <SafeAreaView style={{ flex: 1, backgroundColor: colorBackgroundTheme.bg }}>
-      <ImageBackground source={require('../assets/images/op.png')} style={styles.backgroundImage} resizeMode="cover">
+      <ImageBackground source={require('../assets/images/opbg2.png')} style={styles.backgroundImage} resizeMode="cover">
         <View style={styles.container}>
           <View style={styles.logoContainer}>
-            <Image source={require('../assets/images/zoro.png')} style={styles.logoImage} />
+            <Image source={require('../assets/images/oplogo.png')} style={styles.logoImage} />
           </View>
           <View style={styles.imageContainer}>
-            <Image source={require('../assets/images/zoro0.png')} style={styles.welcomeImage} />
+            <Image source={require('../assets/images/bgop.png')} style={styles.welcomeImage} />
           </View>
           <Button text="Sign Out" type="TERTIARY" onPress={onPressSignOut} />
         </View>
@@ -41,7 +41,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
   },
   logoImage: {
-    width: 200,
+    width: 300,
     height: 100,
   },
   imageContainer: {

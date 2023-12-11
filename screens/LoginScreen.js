@@ -12,7 +12,7 @@ export default function LoginScreen() {
 
   const handleSubmit = async () => {
     if (email && password) {
-      try {
+      try {//fetch ni sya ako IP
         const response = await fetch('http://192.168.1.63:8000/api/auth/login', {
           method: 'POST',
           headers: {
@@ -52,7 +52,7 @@ export default function LoginScreen() {
             </TouchableOpacity>
           </View>
           <View style={{ flexDirection: 'row', justifyContent: 'center', marginBottom: 1 }}>
-            {/* You can remove the Image component as it's now the background */}
+            {}
           </View>
 
           <View style={{ borderTopLeftRadius: 50, borderTopRightRadius: 50, flex: 1, backgroundColor: 'transparent', paddingHorizontal: 20, paddingTop: 20 }}>
@@ -97,7 +97,7 @@ export default function LoginScreen() {
 
 const styles = {
   label: {
-    color: 'gray',
+    color: 'white',
     marginLeft: 10,
   },
   inputContainer: {
@@ -121,7 +121,7 @@ const styles = {
     color: 'white',
   },
   secondaryText: {
-    color: 'gray',
+    color: 'white',
     fontWeight: 'bold',
   },
   SigningupText: {

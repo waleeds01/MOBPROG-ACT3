@@ -20,7 +20,6 @@ const WelcomeScreen = () => {
         <Image source={require("../assets/images/woa.png")} style={styles.logo} />
 
         <Text style={styles.title}>Welcome</Text>
-        {/* Centering the subtitle */}
         <Text style={[styles.subtitle, { textAlign: "center" }]}>Discover the World of Anime</Text>
 
         <TouchableOpacity style={styles.button} onPress={onSignUp}>
@@ -48,7 +47,7 @@ const styles = StyleSheet.create({
   container: {
     width: "80%",
     padding: 20,
-    backgroundColor: "rgba(0, 0, 0, 0.6)", // Semi-transparent black background
+    backgroundColor: "rgba(0, 0, 0, 0.6)",
     borderRadius: 5,
     alignItems: "center",
   },
